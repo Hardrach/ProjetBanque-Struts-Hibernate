@@ -54,7 +54,7 @@ Une application web de gestion bancaire robuste et moderne, développée pour un
 ## 📸 Aperçu de l'Interface
 
 ![Interface Preview](banque_ui_preview.png)
-*Aperçu du tableau de bord moderne avec navigation fluide et design Glassmorphism.*
+*Capture d'écran réelle de l'interface d'administration : Gestion des clients avec design Glassmorphism et mode sombre.*
 
 ---
 
