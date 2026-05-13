@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts-config PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+"http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+    <!-- FORM BEANS -->
+
+    <form-beans>
+
+        <!-- Client -->
+
+        <form-bean
+            name="clientForm"
+            type="form.ClientForm"/>
+
+        <!-- Compte -->
+
+        <form-bean
+            name="compteForm"
+            type="form.CompteForm"/>
+
+        <!-- Operation -->
+
+        <form-bean
+            name="operationForm"
+            type="form.OperationForm"/>
+
+    </form-beans>
+
+    <!-- ACTION MAPPINGS -->
+
+    <action-mappings>
+
+        <!-- CLIENT -->
+
+        <action
+            path="/client"
+            type="action.ClientAction"
+            name="clientForm"
+            scope="request"
+            validate="false"
+            input="/index.jsp">
+
+            <forward
+                name="success"
+                path="/index.jsp"/>
+
+        </action>
+
+        <!-- COMPTE -->
+
+        <action
+            path="/compte"
+            type="action.CompteAction"
+            name="compteForm"
+            scope="request"
+            validate="false"
+            input="/compte.jsp">
+
+            <forward
+                name="success"
+                path="/compte.jsp"/>
+
+        </action>
+
+        <!-- OPERATION -->
+
+        <action
+            path="/operation"
+            type="action.OperationAction"
+            name="operationForm"
+            scope="request"
+            validate="false"
+            input="/operation.jsp">
+
+            <forward
+                name="success"
+                path="/operation.jsp"/>
+
+        </action>
+
+    </action-mappings>
+
+</struts-config>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="model.Operation" table="operation">
+
+        <id name="idOperation" column="idOperation" type="int">
+            <generator class="assigned"/>
+        </id>
+
+        <property name="typeOperation"
+                  column="typeOperation"
+                  type="string"/>
+
+        <property name="montant"
+                  column="montant"
+                  type="double"/>
+
+        <property name="dateOperation"
+                  column="dateOperation"
+                  type="date"/>
+
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="model.Client" table="client">
+
+        <id name="codeClient" column="codeClient" type="string">
+            <generator class="assigned"/>
+        </id>
+
+        <property name="nomClient" column="nomClient" type="string"/>
+
+        <property name="adresseClient" column="adresseClient" type="string"/>
+
+    </class>
+</hibernate-mapping>
