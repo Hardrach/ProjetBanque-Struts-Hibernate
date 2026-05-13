@@ -69,7 +69,7 @@ Une application web de gestion bancaire robuste et moderne, développée pour un
 1. Démarrez MySQL via XAMPP.
 2. Accédez à `http://localhost/phpmyadmin`.
 3. Créez une base de données nommée `banque_db`.
-4. Importez le fichier SQL (si disponible) ou laissez Hibernate générer les tables automatiquement via `hbm2ddl.auto=update`.
+4. Importez le fichier **[banque_db.sql](banque_db.sql)** situé à la racine du projet pour initialiser les tables et les données d'exemple.
 
 ### 3. Importation du Projet
 1. Ouvrez NetBeans 8.2.
